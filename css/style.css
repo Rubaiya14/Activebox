@@ -1,0 +1,174 @@
+/*Global CSS*/
+
+body {
+
+  font-family: 'Raleway', sans-serif;
+}
+
+
+p {
+
+  margin-bottom: 0;
+}
+/*Header Section Starts*/
+
+header {
+    background: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.navbar {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar .nav-item {
+    margin: 0 12px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link:after {
+
+    content: "";
+    position: absolute;
+    background: #e84545;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: 0.5s linear;
+}
+
+
+.navbar .nav-item .nav-link:before {
+
+    content: "";
+    position: absolute;
+    background: #e84545;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: 0.6s linear;
+}
+.navbar .nav-item .nav-link:hover:after {
+
+    width: 47%;
+}
+
+.navbar .nav-item .nav-link:hover:before {
+
+    width: 47%;
+}
+
+.navbar .nav-item.active .nav-link{
+    color: #e84545;
+}
+
+.navbar .nav-item.active .nav-link:after {
+
+    content: "";
+    position: absolute;
+    background: #e84545;
+    width: 47%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: 0.5s linear;
+}
+
+
+.navbar .nav-item.active .nav-link:before {
+
+    content: "";
+    position: absolute;
+    background: #e84545;
+    width: 47%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: 0.6s linear;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+.hero-area{
+
+    text-align: center;
+    color: #fff;
+    margin-top: 256px;
+}
+
+.hero-area h1{
+    font-family: "Open Sans" , sans-serif;
+    font-size: 58px;
+    font-weight: 650;
+    padding: 0 15%;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+.hero-area p{
+
+    padding: 0 20%;
+    line-height: 1.7;
+    margin-bottom: 70px;
+    
+}
+.hero-area .btn-cta {
+    color:#fff; 
+    background-color: #e84545;
+    border-color: #e84545;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+
+}
+.hero-area .btn-cta:hover {
+
+    background-color: #ce0707;
+    border-color: #ce0707;
+
+}
+
+.service{
+
+    padding: 80px 0;
+}
+
+.service .box{
+
+    text-align: center;
+
+    margin: 30px 15px;
+}
+
+.service .box img{
+
+    margin-bottom: 35px;
+}
+
+.service .box h4{
+
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.service .box p{
+
+    font-size: 17px;
+    text-align: center;
+}
